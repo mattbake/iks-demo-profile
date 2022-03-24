@@ -73,6 +73,8 @@ variable "masterinfraname" {
   type = string
 }
 
+
+
 #locals {
 # organization= yamldecode(data.terraform_remote_state.global.outputs.organization)
 # ippool_list = yamldecode(data.terraform_remote_state.global.outputs.ip_pool_policy)
