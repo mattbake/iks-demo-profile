@@ -28,66 +28,66 @@ variable "mgmtcfgsshkeys" {
   description = "sshkeys"
 }
 variable "organization" {
-    type = string
+  type = string
 }
 variable "ippool_list" {
-    type = string
+  type = string
 }
 variable "net_config" {
-    type = string
+  type = string
 }
 variable "sys_config" {
-    type = string
+  type = string
 }
 variable "clustername" {
-    type = string
+  type = string
 }
 variable "mgmtcfglbcnt" {
-    type = string
+  type = string
 }
 variable "mgmtcfgsshuser" {
-    type = string
+  type = string
 }
 variable "ippoolmaster_list" {
-    type = string
+  type = string
 }
 variable "ippoolworker_list" {
-    type = string  
+  type = string
 }
 variable "kubever_list" {
-    type = string
+  type = string
 }
 variable "infrapolname" {
-    type = string
+  type = string
 }
 variable "instancetypename" {
-    type = string  
+  type = string
 }
 variable "mastergrpname" {
-    type = string  
+  type = string
 }
 variable "masterdesiredsize" {
-    type = string
+  type = string
 }
 variable "masterinfraname" {
-    type = string  
+  type = string
 }
 
 #locals {
- # organization= yamldecode(data.terraform_remote_state.global.outputs.organization)
- # ippool_list = yamldecode(data.terraform_remote_state.global.outputs.ip_pool_policy)
- # netcfg_list = yamldecode(data.terraform_remote_state.global.outputs.network_pod)
- # syscfg_list = yamldecode(data.terraform_remote_state.global.outputs.network_service)
- # clustername = yamldecode(data.terraform_remote_state.global.outputs.clustername)
-  #mgmtcfgetcd = yamldecode(data.terraform_remote_state.global.outputs.mgmtcfgetcd)
- # mgmtcfglbcnt = yamldecode(data.terraform_remote_state.global.outputs.mgmtcfglbcnt)
- # mgmtcfgsshuser = yamldecode(data.terraform_remote_state.global.outputs.mgmtcfgsshuser)
- # ippoolmaster_list = yamldecode(data.terraform_remote_state.global.outputs.ip_pool_policy)
- # ippoolworker_list = yamldecode(data.terraform_remote_state.global.outputs.ip_pool_policy)
- # kubever_list = yamldecode(data.terraform_remote_state.global.outputs.k8s_version_name)
- # infrapolname = yamldecode(data.terraform_remote_state.global.outputs.infrapolname)
- # instancetypename = yamldecode(data.terraform_remote_state.global.outputs.instancetypename)
- # mastergrpname = yamldecode(data.terraform_remote_state.global.outputs.mastergrpname)
- # masterdesiredsize = yamldecode(data.terraform_remote_state.global.outputs.masterdesiredsize)
- # masterinfraname = yamldecode(data.terraform_remote_state.global.outputs.masterinfraname)
+# organization= yamldecode(data.terraform_remote_state.global.outputs.organization)
+# ippool_list = yamldecode(data.terraform_remote_state.global.outputs.ip_pool_policy)
+# netcfg_list = yamldecode(data.terraform_remote_state.global.outputs.network_pod)
+# syscfg_list = yamldecode(data.terraform_remote_state.global.outputs.network_service)
+# clustername = yamldecode(data.terraform_remote_state.global.outputs.clustername)
+#mgmtcfgetcd = yamldecode(data.terraform_remote_state.global.outputs.mgmtcfgetcd)
+# mgmtcfglbcnt = yamldecode(data.terraform_remote_state.global.outputs.mgmtcfglbcnt)
+# mgmtcfgsshuser = yamldecode(data.terraform_remote_state.global.outputs.mgmtcfgsshuser)
+# ippoolmaster_list = yamldecode(data.terraform_remote_state.global.outputs.ip_pool_policy)
+# ippoolworker_list = yamldecode(data.terraform_remote_state.global.outputs.ip_pool_policy)
+# kubever_list = yamldecode(data.terraform_remote_state.global.outputs.k8s_version_name)
+# infrapolname = yamldecode(data.terraform_remote_state.global.outputs.infrapolname)
+# instancetypename = yamldecode(data.terraform_remote_state.global.outputs.instancetypename)
+# mastergrpname = yamldecode(data.terraform_remote_state.global.outputs.mastergrpname)
+# masterdesiredsize = yamldecode(data.terraform_remote_state.global.outputs.masterdesiredsize)
+# masterinfraname = yamldecode(data.terraform_remote_state.global.outputs.masterinfraname)
 #}
