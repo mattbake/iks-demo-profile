@@ -67,7 +67,7 @@ variable "mastergrpname" {
   type = string
 }
 variable "masterdesiredsize" {
-  type = string
+  type = number
 }
 variable "masterinfraname" {
   type = string
