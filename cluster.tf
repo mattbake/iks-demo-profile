@@ -103,7 +103,7 @@ resource "intersight_kubernetes_node_group_profile" "masternodegrp" {
 
 #Infra provider
 resource "intersight_kubernetes_virtual_machine_infrastructure_provider" "masterinfraprov" {
-  name = blahdiblah #var.masterinfraname
+  name = "blahdiblah" #var.masterinfraname
   infra_config_policy {
     moid        = data.intersight_kubernetes_virtual_machine_infra_config_policy.infrapol.results.0.moid
     object_type = "kubernetes.VirtualMachineInfraConfigPolicy"
