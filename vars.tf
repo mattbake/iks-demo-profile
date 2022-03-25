@@ -67,15 +67,20 @@ variable "mastergrpname" {
   type = string
 }
 variable "masterdesiredsize" {
-  type = number
+  type = string
+  default = "1"
 }
 variable "masterinfraname" {
   type = string
 }
 variable "mastermaxsize" {
   type = string
+  default = "10"
 }
-
+variable "masterminsize" {
+  type = string
+  default = "1"
+}
 
 #locals {
 # organization= yamldecode(data.terraform_remote_state.global.outputs.organization)

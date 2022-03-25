@@ -82,6 +82,7 @@ resource "intersight_kubernetes_node_group_profile" "masternodegrp" {
   node_type   = "ControlPlaneWorker"
   desiredsize = var.masterdesiredsize
   maxsize     = var.mastermaxsize
+  minsize = var.masterminsize
 
   ip_pools {
     object_type = "ippool.Pool"
