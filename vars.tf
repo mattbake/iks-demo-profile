@@ -72,7 +72,7 @@ variable "masterdesiredsize" {
 variable "masterinfraname" {
   type = string
 }
-variable ""mastermaxsize"" {
+variable "mastermaxsize" {
   type = string
 }
 
