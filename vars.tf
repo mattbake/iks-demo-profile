@@ -72,7 +72,9 @@ variable "masterdesiredsize" {
 variable "masterinfraname" {
   type = string
 }
-
+variable ""mastermaxsize"" {
+  type = string
+}
 
 
 #locals {
